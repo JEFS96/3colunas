@@ -1,0 +1,16 @@
+/* configurações gerais */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: hsl(0, 0%, 95%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
