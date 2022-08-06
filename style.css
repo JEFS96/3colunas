@@ -5,7 +5,7 @@
 }
 
 body{
-    background: hsl(0, 0%, 95%);
+    background: linear-gradient(60deg,  rgb(3, 3, 93), rgb(255, 157, 0), rgb(143, 1, 58)) ;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -13,4 +13,8 @@ body{
     display: flex;    
     align-items: center;
     justify-content: center;
+    font-size: 15px;
 }
+
+/* inicio container */
+<i> e
