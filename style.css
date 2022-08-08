@@ -2,10 +2,11 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 body{
-    background: linear-gradient(60deg,  rgb(3, 3, 93), rgb(255, 157, 0), rgb(143, 1, 58)) ;
+    background: linear-gradient(60deg,  rgb(3, 3, 93), rgb(128, 80, 3), rgb(143, 1, 58)) ;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;  
@@ -18,14 +19,74 @@ body{
 
 /* inicio container */
 .container{
+    max-width: 55em;
     display: flex;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.card1{
-    display: flex;
-    border: 1px solid red;
-    padding: 2rem 2.5rem;
+    flex-flow: wrap row;
 
 }
+/* testando responsivo c/ media */
+@media (max-width:375px){
+    .container{
+        flex-flow: wrap column;
+        width: 100% ;
+    }
+}
+
+
+.card{
+    border-radius: 0;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2em 2em 2.5em;
+    justify-content: space-between;
+ 
+}
+@media(min-width: 519px){
+.card:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.card:last-child{
+    border-radius:  0 10px 10px 0;
+}
+}
+
+.card h1{
+    margin-top: 1.25em;
+    color: wheat;
+}
+.card p{
+    margin-top: 1.5em;
+    max-width: 12em;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    flex: 1;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: wheat;
+   
+}
+.card button{
+    margin-top: 2em;
+    min-width: 8em;
+    max-width: 8.5em;
+    padding: 0.8em;
+    border-radius: 1.2em;
+    border: none;
+    
+
+}
+button:hover{
+    filter: brightness(0.8);
+    transition:0.3s;
+}
+.orange{
+    background: hsl(31, 77%, 52%);
+}
+.ocean{
+    background:hsl(184, 100%, 22%);
+}
+.green{
+    background: hsl(179, 100%, 13%) ;
+}
+
